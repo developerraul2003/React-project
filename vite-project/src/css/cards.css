@@ -1,0 +1,132 @@
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  gap: 15px;
+  margin-top: 5%;
+}
+
+.card-header {
+  margin-top: -30%;
+  display: flex;
+  > .card-header-start {
+    position: absolute;
+    left: 3%;
+    color: #000;
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  > button {
+    position: absolute;
+    right: 50px;
+    width: 70px;
+    height: 25px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    background: #fff;
+    cursor: pointer;
+    > a {
+      color: #000;
+      text-align: center;
+      font-family: Roboto;
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+  > button:hover {
+    background-color: #cecece;
+  }
+}
+.card {
+  width: 285px;
+  height: 318px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: #fff;
+  -moz-box-shadow: 7px 7px 6px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 7px 7px 6px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 7px 7px 6px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 5px;
+
+  > .card-image img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+    margin-left: 3%;
+    width: 265px;
+    height: 165px;
+    border-radius: 5px;
+  }
+  > .card-image:hover img {
+    transform: scale(1.03);
+  }
+}
+.card-body {
+  margin-left: 3%;
+}
+.card-body-header .card-body-header-price {
+  color: #000;
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.card-body-header-title {
+  color: #000;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 7px;
+}
+.card-body-location {
+  color: rgba(0, 0, 0, 0.5);
+  font-family: Roboto;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 3%;
+}
+.card-body-date {
+  color: rgba(0, 0, 0, 0.5);
+  font-family: Roboto;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 3%;
+}
+.card-body-icon {
+  margin-top: 6%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  gap: 10px;
+}
+@media (max-width: 776px) {
+  .card-header {
+    display: none;
+  }
+
+  .card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    gap: 15px;
+    margin-top: 5%;
+    
+  }
+}
